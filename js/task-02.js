@@ -11,11 +11,11 @@ const list = document.querySelector('#ingredients');
 const fragment = document.createDocumentFragment();
 
 ingredients.forEach(ingredient => {
-  const li = document.createElement('li');
+  const liEl = document.createElement('li');
 
-  li.textContent = ingredient;
-  li.classList.add('item');
-  fragment.appendChild(li);
+  liEl.textContent = ingredient;
+  liEl.classList.add("item");
+  fragment.appendChild(liEl);
   
 });
 list.appendChild(fragment);
